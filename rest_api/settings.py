@@ -30,9 +30,9 @@ load_dotenv()
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['avinash-todo.netlify.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -62,7 +62,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    'https://avinash-todo.netlify.app'
 ]
 
 
